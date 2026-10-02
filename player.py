@@ -19,3 +19,7 @@ class Player:
         self.wallet += 1
     def lose_coin(self):
         self.wallet -= 1
+    def get_wallet(self):
+        return self.wallet
+    def get_name(self):
+        return self.name
