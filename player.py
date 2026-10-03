@@ -7,10 +7,10 @@ this program contains the Player class
 from coin import Coin
 
 class Player:
-    def __init__(self, name, sideup):
+    def __init__(self, name):
         self.name = name
         self.wallet = 20
-        self.coin = Coin(sideup)
+        self.coin = Coin("Neither")
 
     def toss_coin(self):
         self.coin.toss()
