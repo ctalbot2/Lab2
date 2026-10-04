@@ -18,6 +18,14 @@ def main():
     while True:
         choice = input("Do you want to toss the coins? y/n: ")
         if choice == "y":
+            player1.toss_coin()
+            player2.toss_coin()
+
+            print("\n Tossing...")
+            print(f"{player1.get_name()} tossed {player1.get_coin_side()}")
+            print(f"{player2.get_name()} tossed {player2.get_coin_side()}")
+            
+
             print(f"{player1.get_name()} has {player1.get_wallet()} coins")
             print(f"{player2.get_name()} has {player2.get_wallet()} coins")
         elif choice == "n":
