@@ -1,9 +1,8 @@
 """
 Lab9_username-1.py
 Cole Talbot
-The purpose of the program,
-Any info about starter code (If used, where it came from, link, etc.), and the
-10/2/2026
+This program contains the main() function
+10/4/2026
 """
 from player import Player
 
