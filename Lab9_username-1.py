@@ -21,6 +21,15 @@ def main():
             player1.toss_coin()
             player2.toss_coin()
 
+            if player1.get_coin_side() == player2.get_coin_side():
+                player1.win_coin()
+                player2.lose_coin()
+
+            else:
+                player2.win_coin()
+                player1.lose_coin()
+
+
             print("\n Tossing...")
             print(f"{player1.get_name()} tossed {player1.get_coin_side()}")
             print(f"{player2.get_name()} tossed {player2.get_coin_side()}")
